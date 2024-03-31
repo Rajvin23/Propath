@@ -1,0 +1,159 @@
+<body>
+
+<div class="tabs-container">
+    <div class="tab">Tab 1</div>
+    <div class="tab">Tab 2</div>
+    <div class="tab">Tab 3</div>
+    <div class="tab">Tab 4</div>
+    <div class="tab">Tab 5</div>
+    <div class="tab">Tab 6</div>
+    <div class="tab">Tab 7</div>
+    <div class="highlighter"></div>
+  </div>
+
+  <div class="scope">
+    <div class="tabs">
+    <div class="mobile">Mobile App</div>    
+    </div>
+     <div class="tabs">
+          
+        <div class="platform">Platforms</div>
+        <div class="tmbd">
+           <p>TMBD</p>
+        </div>
+    
+    </div>
+     <div class="tabs">
+        <div class="website">Website</div>
+    </div>
+    </div>
+</body>
+<style>
+body{
+   background: linear-gradient(to bottom, rgb(3, 3, 53), rgb(45, 45, 194) 20%, rgb(2, 2, 58) 33%, rgb(2, 2, 58) 100%) ;
+   color: white
+}
+
+.tabs {
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 260px;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 10px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+    text-align: left;
+    background-color: rgb(245, 245, 248);
+    font-family: Poppins;
+}
+
+.mobile{
+    background-color: rgb(225, 225, 43);
+    margin-bottom: 80%;
+    font-size: 0.8rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    color: white;
+    width: 21%;
+}
+
+.website{
+    background-color: rgb(241, 16, 16);
+    margin-bottom: 80%;
+    font-size: 0.8rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    color: white;
+    width: 21%;
+}
+
+.platform{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(72, 237, 81);
+    margin-bottom: 80%;
+    font-size: 0.8rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    color: white;
+    width: 21%;
+}
+
+
+
+.tab_contents{
+   font-family: Poppins;
+   margin-bottom: 10%;
+}
+
+.scope{
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.highlighter {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+    /* Set the color of the highlighter */
+  transition: 0.3s ease; /* Add a smooth transition effect */
+  border-top: 2px solid blue; /* Add a border to the highlighter */
+  box-sizing: border-box;
+  background: linear-gradient(to right, transparent 80%, blue 80%);
+}
+
+.tab.active {
+  font-weight: bold; /* Make the active tab bold */
+}
+
+.tab.active ~ .highlighter {
+  width: 14.2857%; /* Set the width of the highlighter based on the number of tabs */
+  left: calc(14.2857% * var(--active-tab-index)); /* Position the highlighter based on the active tab */
+}
+
+
+</style>
+
+<script>
+
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+        document.documentElement.style.setProperty('--active-tab-index', index);
+    });
+});
+document.documentElement.style.setProperty('--active-tab-index', 0);
+
+
+
+</script>
+
+
+

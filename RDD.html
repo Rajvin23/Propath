@@ -1,0 +1,501 @@
+<body>
+
+    <div class="blackshade">
+        <div class="heading">
+            <div class="logoNname">
+            <img id="logo" src="logo.png">
+            <span class="propath">ProPath</span>
+            </div>    
+        
+        <div class="navigation">
+
+           <a class="anchor_tag" href="mainhome.html">Home</a>
+           <a class="anchor_tag" href="services.html">Services</a> 
+           <a class="anchor_tag" href="v.html">Work</a>
+           <a class="anchor_tag" href="about.html">About Us</a>
+            
+            </div>            
+        </div>
+        </div>
+
+       
+    
+    <div class="companyNdesign"><p>ProPath infohub</p>
+        <img id="Ellipse" src="Ellipse 15.svg"> </div>
+
+        <div class="services">
+            <p>Enhance Your Digital Journey with Our Comprehensive Suite of Services!</p>
+        </div>
+
+<div class="tabs-container"> 
+    <div class="tabs">
+      <button class="tab-header research active" onclick="toggleTab('research')">Research</button>
+      <button class="tab-header design" onclick="toggleTab('design')">Design</button>
+      <button class="tab-header develop" onclick="toggleTab('develop')">Develop</button>
+    </div>
+    <div class="tab-content-container">
+      <div class="tab-content research active" id="research-content">
+        
+        <div class="tab-inner-content">
+            <div id="research" class="researchDiv">
+                <div class="researchObj">
+                    We provide data-driven insights that represent the voice of the user and resonate with business objectives.
+                 </div>
+                 <div class="researchTabs">
+                 <div>
+                    <div id="dropContentOne">
+                        <div class="ethnoResearch">
+                        <span  onclick="handleData('dropContentOne')">Ethnographic Research</span>
+                        <div><span>Easily build, deploy and test Solana programs and smart contracts from a browser IDE.</span>
+                    </div></div></div>
+                    <div id="dropContentTwo">
+                        <span   onclick="handleData('dropContentTwo')">Heuristic Analysis</span>
+                        <span >This element contains test 2</span>
+                    </div>
+                    <div id="dropContentThree">
+                        <span   onclick="handleData('dropContentThree')">Design Audit</span>
+                        <span>This element contains test 3</span>
+                    </div>
+                    <div id="sideDivOne" class="dropdownbutton">
+                        <div  onclick="handleData('dropContentOne')">Ethnographic Research ^</div>
+                        <div  onclick="handleData('dropContentTwo')">Heuristic Analysis ^</div>
+                        <div  onclick="handleData('dropContentThree')">Design Audit ^</div>
+                        <div id="hiddenOptionLeft">
+                            <div id="dropOptionFour" onclick="handleData('dropContentFour')">UX research ^</div>
+                            <div id="dropOptionFive" onclick="handleData('dropContentFive')">Usability Testing ^</div>
+                            <div id="dropOptionSix" onclick="handleData('dropContentSix')">Emerging Trends ^</div>
+                        </div>
+                    
+                    </div>
+                              
+                </div> 
+                <div class="dropdownbutton">            
+                    <div id="sideDivTwo" class="dropdownbutton">
+                        <div id="hiddenOption">
+                            <div id="dropOptionOne" onclick="handleData('dropContentOne')">Ethnographic Research ^</div>
+                            <div id="dropOptionTwo" onclick="handleData('dropContentTwo')">Heuristic Analysis ^</div>
+                            <div id="dropOptionThree" onclick="handleData('dropContentThree')">Design Audit ^</div>
+                        </div>
+                        <div onclick="handleData('dropContentFour')">UX research ^</div>
+                        <div onclick="handleData('dropContentFive')">Usability Testing ^</div>
+                        <div onclick="handleData('dropContentSix')">Emerging Trends ^</div>
+                    </div>
+                    <div id="dropContentFour">
+                        <span   onclick="handleData('dropContentFour')">UX research</span>
+                        <span>This element contains test 4</span>
+                    </div>
+                    <div id="dropContentFive">
+                        <span   onclick="handleData('dropContentFive')">Usability Testing</span>
+                        <span>This element contains test 5</span>
+                    </div>
+                    <div id="dropContentSix">
+                        <span   onclick="handleData('dropContentSix')">Emerging Trends</span>
+                        <span>This element contains test 6</span>
+                    </div>
+                </div>
+                </div>    
+    
+            </div>
+        </div> 
+                
+
+
+        </div>
+      </div>
+      <div class="tab-content design" id="design-content">
+        <div class="tab-inner-content">
+          content2
+        </div>
+      </div>
+      <div class="tab-content develop" id="develop-content">
+        <div class="tab-inner-content">
+          content3
+        </div>
+      </div>
+    </div>
+  
+
+    <img id="servicesimg1" src="servicesimg1.svg">
+    <img id="servicesimg2" src="servicesimg2.svg">
+
+
+   
+</body>
+
+  <style>
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(/propath/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: kronaOne;
+    src: url(/proPath/fonts/KronaOne-Regular.ttf);
+
+    
+ }
+
+ @font-face {
+    font-family: Poppins;
+    src: url(/propath/fonts/Poppins/Poppins-Medium.ttf);
+}
+.propath{
+  font-size: 1.2rem;
+  /* margin-top: 17px; */
+  font-family: kronaOne;
+}
+
+.heading{
+  height:50px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2px;
+  line-height: 5px;
+  width: 60%;
+  margin:auto;
+  color: #fff;
+  padding:0px 5px;
+  margin:0 20%;
+  background-color: rgba(128, 128, 128, 0.35); 
+  border-radius: 1rem;
+    z-index: 10;
+    font-family: PoppinsMedium;
+}
+
+
+
+.logoNname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    font-family: PoppinsMedium;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width:60%;
+    /* margin-bottom: 10%; */
+    
+}
+
+  .blackshade{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    padding-top: 40px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));;
+    z-index: 100;    
+  }
+
+  nav a:hover{
+    font: bold;
+  }
+
+  .anchor_tag {
+    text-decoration: none;
+    color: #fff;
+  }
+
+body{
+    background: linear-gradient(to bottom, rgb(3, 3, 53), rgb(45, 45, 194) 20%, rgb(2, 2, 58) 55%, rgb(2, 2, 58) 100%) ;;
+    margin-bottom: 20%;
+}
+
+#ellipse{
+    margin-left: 65%;
+}
+
+.companyNdesign{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  color: rgb(211, 196, 196);
+  
+}
+
+.services{
+    font-family: Poppins;
+    margin-top: 50px;
+   text-align: center;
+   font-size: 2.5rem;
+   color: white;
+   margin-left: 20%;
+   margin-right: 20%;
+   justify-content: center;
+   
+}
+
+
+
+
+
+.tabs-container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    height: 100vh;
+  }
+  
+.tabs {
+    display: flex;
+    
+  }
+  
+.tab-header {
+  width:60%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  font-family: Poppins;
+    font-size: 1.5rem;
+  position: relative; /* Add this line */
+  background-color: transparent;
+  
+}
+
+.researchTabs{
+    display: flex;
+    flex-direction: row;
+}
+  
+.tab-header.active::after { /* Add this block */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Height of the highlighter */
+  background-color: blue; /* Color of the highlighter */
+}
+
+  .tab-content-container {
+    text-align: center;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .tab-inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .research.active::after {
+  background-color: rgb(39, 186, 235);
+}
+
+.design.active::after {
+  background-color: red;
+}
+
+.develop.active::after {
+  background-color: green;
+}
+
+.tab-header.research.active::after,
+.tab-header.design.active::after,
+.tab-header.develop.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Height of the highlighter */
+}
+
+.tab-header.active + .tab-content.active::after {
+  display: block; /* Display the highlighter when both tab header and content are active */
+}
+
+.researchObj{
+  display: flex;
+  flex-direction: column;
+}
+
+.researchDiv{
+    display: flex;
+  flex-direction: row;
+}
+
+
+        #dropContentOne {
+            display: none;
+            width: 50%;
+            
+        }
+
+        #dropContentTwo {
+            width: 50%;
+            display: none;
+        }
+
+        #dropContentThree {
+            width: 50%;
+            display: none;
+        }
+
+        #dropContentFour {
+            width: 50%;
+            display: none;
+        }
+
+        #dropContentFive {
+            width: 50%;
+            display: none;
+        }
+
+        #dropContentSix {
+            width: 50%;
+            display: none;
+        }
+
+        #research{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        #design{
+            display:none;
+        }
+        #develop{
+            display:none;
+        }
+        .dropdownbutton {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #hiddenOption {
+            display: none;
+        }
+
+        #hiddenOptionLeft {
+            display: none;
+        }
+
+        #sideDivOne {
+            display: flex;
+            flex-direction: 'column';
+        }
+
+        #sideDivTwo {
+            display: flex;
+            flex-direction: 'column';
+        }
+
+        #servicesimg1{            
+            margin-left: 8%;
+            margin-bottom: 10%;
+        }
+
+        #servicesimg2{            
+            margin-left: 12%;
+            margin-bottom: 10%;
+        }
+
+</style>  
+  
+<script>
+
+    function toggleTab(tabName) {
+  var tabs = document.querySelectorAll('.tab-content');
+  tabs.forEach(function(tab) {
+    if (tab.id === tabName + "-content") {
+      tab.classList.toggle("active");
+    } else {
+      tab.classList.remove("active");
+    }
+  });
+
+  var tabHeaders = document.querySelectorAll('.tab-header');
+  tabHeaders.forEach(function(header) {
+    if (header.textContent.toLowerCase() === tabName) {
+      header.classList.add("active");
+    } else {
+      header.classList.remove("active");
+    }
+  });
+}
+
+
+let dropContent = ['dropContentOne', 'dropContentTwo', 'dropContentThree', 'dropContentFour', 'dropContentFive', 'dropContentSix'];
+        let dropOption = ['dropOptionOne','dropOptionTwo','dropOptionThree','dropOptionFour','dropOptionFive','dropOptionSix']
+        let openDrop = ""
+        function handleData(props) {
+
+            dropContent.forEach((value, index) => {
+                if (value === props) { 
+                    if (openDrop === value) {
+                        document.getElementById('sideDivTwo').style = " display: flex;flex-direction: 'column'";
+                        document.getElementById('sideDivOne').style = " display: flex;flex-direction: 'column'";
+                        document.getElementById('hiddenOption').style = "display:none";
+                        document.getElementById('hiddenOptionLeft').style = "display:none";
+                        document.getElementById(value).style = "display:none";
+                        document.getElementById(dropOption[index]).style="display:block"
+                        openDrop = "";
+                    }
+                    else {
+                        openDrop = value;
+                        console.log('success', value, document.getElementById(dropOption[index]))
+                        document.getElementById(value).style = "display:block";
+                        if (index < 3) {
+                            document.getElementById('sideDivOne').style = "display:none";
+                            document.getElementById('sideDivTwo').style = " display: flex;flex-direction: 'column'"
+                            document.getElementById('hiddenOption').style = " display: flex;flex-direction: column;gap: 10px;"
+                            document.getElementById(dropOption[index]).style="display:none"
+                        }
+                        else {
+                            document.getElementById('sideDivTwo').style = "display:none";
+                            document.getElementById('sideDivOne').style = " display: flex;flex-direction: 'column'"
+                            document.getElementById('hiddenOptionLeft').style = " display: flex;flex-direction: column;gap: 10px;"
+                            document.getElementById(dropOption[index]).style="display:none"
+                        }
+                    }
+                }
+                else {
+                    console.log('failure')
+                    document.getElementById(value).style = "display:none";
+                    document.getElementById(dropOption[index]).style="display:block"
+                }
+            })
+        }
+        function handleMainTab(props){
+            let mainhead=['research','design','develop'];
+            mainhead.forEach(data=>{if(props===data){
+                console.log("suc",props,data,document.getElementById(props).style)
+                document.getElementById(props).style="display:flex";
+            }
+            else{
+                console.log("fail")
+                document.getElementById(props).style="display:none"
+            }
+        })
+            
+        }
+</script>
+
+
+
+
+        
+

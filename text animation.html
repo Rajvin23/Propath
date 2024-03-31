@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paragraph Animation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Scroll down</h1>
+</div>
+<div class="content">
+<p class="animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nulla repellendus ipsam autem odit. Optio sed perferendis quia aut, nemo, molestias consequuntur est, repellendus quisquam iusto cum culpa animi corporis.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.animate {
+  visibility: hidden;
+}
+
+@keyframes moveFromLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes moveFromRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes moveFromTop {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes moveFromBottom {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate span {
+  display: inline-block;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animate span:nth-child(1) {
+  animation: moveFromTop 1s ease forwards, fadeIn 0.5s 1s forwards;
+}
+
+.animate span:nth-child(2) {
+  animation: moveFromLeft 1s ease forwards, fadeIn 0.5s 1.5s forwards;
+}
+
+.animate span:nth-child(3) {
+  animation: moveFromBottom 1s ease forwards, fadeIn 0.5s 2s forwards;
+}
+
+.animate span:nth-child(4) {
+  animation: moveFromRight 1s ease forwards, fadeIn 0.5s 2.5s forwards;
+}
+
+.animate span:nth-child(5) {
+  animation: moveFromTop 1s ease forwards, fadeIn 0.5s 3s forwards;
+}
+
+/* Add more animations for additional words */
+
+
+</style>
+
+<script>
+
+window.addEventListener('scroll', function() {
+  const paragraph = document.querySelector('.animate');
+  const position = paragraph.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (position < screenHeight * 0.75) {
+    paragraph.classList.add('visible');
+  } else {
+    paragraph.classList.remove('visible');
+  }
+});
+
+
+</script>

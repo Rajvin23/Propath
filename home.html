@@ -1,0 +1,60 @@
+<div class="navigation">
+    <a class="anchor_tag">Button 1</a>
+    <a class="anchor_tag">Button 2</a>
+    <a class="anchor_tag">Button 3</a>
+    <a class="highlighter"></div>
+  </div>
+  
+<style>
+
+    
+ 
+ .navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.anchor_tag {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.highlighter {
+  position: fixed;
+  bottom: 1px; /* Adjust position to place below buttons */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgb(98, 114, 125); /* Change color and size as needed */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+</style>
+
+<script>
+const buttons = document.querySelectorAll('.anchor_tag');
+const highlighter = document.querySelector('.highlighter');
+
+buttons.forEach(a => {
+  a.addEventListener('click', () => {
+    // Remove 'active' class from all buttons
+    buttons.forEach(btn => btn.classList.remove('active'));
+    // Add 'active' class to the clicked button
+    a.classList.add('active');
+    // Position the highlighter below the clicked button
+    const aRect = a.getBoundingClientRect();
+    highlighter.style.left = `${aRect.left + aRect.width / 2}px`;
+    highlighter.style.opacity = '1';
+  });
+});
+
+</script>
+
