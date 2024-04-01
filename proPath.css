@@ -1,0 +1,669 @@
+ @font-face {
+    font-family: "kronaOne";
+    src: url(/proPath/fonts/KronaOne-Regular.ttf);
+}
+
+    @font-face{
+    font-family: "Poppins";
+    src: url(/proPath/fonts/Poppins/Poppins-Regular.ttf);
+}
+ 
+@font-face{
+    font-family: "Poppins-SemiBold";
+    src: url(/proPath/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-Thin";
+    src: url(/proPath/fonts/Poppins/Poppins-Light.ttf);
+} 
+
+@font-face{
+  font-family: "Poppins-bold";
+  src: url(/proPath/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url(/propath/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+.firstPage{
+  margin-top: -100px;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0; 
+  background:  rgb(35, 2, 39) ;
+    color: white;
+    
+}
+
+.initial{
+  font-size: 2.5rem;
+  font-family: "Poppins-SemiBold";
+  line-height: 10px;
+}
+
+.propath{
+  font-size: 1.2rem;
+  /* margin-top: 17px; */
+  font-family: "kronaOne";
+}
+
+.heading{
+    height:50px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2px;
+  line-height: 5px;
+  width: 60%;
+  margin:auto;
+  color: #fff;
+  padding:0px 5px;
+  margin:0 20%;
+   
+  border-radius: 1rem;
+    z-index: 10;
+    font-family: PoppinsMedium;
+}
+
+
+
+.logoNname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    font-family: "PoppinsMedium";
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width:60%;
+    /* margin-bottom: 10%; */
+    
+}
+
+  .blackshade{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    padding-top: 40px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));;
+    z-index: 100;    
+  }
+
+  .companyNdesign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+    color: rgb(211, 196, 196);
+    
+  }
+
+  #Ellipse{
+    margin-left: 65%;
+}
+
+  nav a:hover{
+    font: bold;
+  }
+
+  .anchor_tag {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .small{
+    font-family: "Poppins";
+    font-style: bold;
+  }
+
+  .large{
+    
+    line-height: 1.5;
+    font-family: "Poppins-SemiBold";
+    font-weight: 70;
+    font-size: 1.8rem;
+  }
+
+  .next{
+   margin-top: 35%;
+   text-align: left;
+  }
+
+  .next2{
+    margin-top: 5%;
+    text-align: left;
+   }
+
+  .tabs {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 260px;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 10px;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+    text-align: left;
+    background-color: rgb(47, 47, 90);
+    font-family: "Poppins";
+}
+
+h2{
+  font-family: "Poppins-Thin";
+  font-size: 1.5rem;
+}
+
+.tab_contents{
+   font-family: "Poppins";
+   margin-bottom: 10%;
+}
+
+.yellowLine h2::before {
+  content: '';
+  border-left: 3px solid rgb(203, 209, 14); /* Adjust the width and color as needed */
+  height: 100%; /* Adjust the height of the line */
+  margin-right: 10px; /* Adjust the distance between the line and the text */
+}
+
+.greenLine h2::before {
+  content: '';
+  border-left: 3px solid rgb(61, 226, 83); /* Adjust the width and color as needed */
+  height: 100%; /* Adjust the height of the line */
+  margin-right: 10px; /* Adjust the distance between the line and the text */
+}
+
+.blueLine h2::before {
+  content: '';
+  border-left: 3px solid rgb(69, 99, 210); /* Adjust the width and color as needed */
+  height: 100%; /* Adjust the height of the line */
+  margin-right: 10px; /* Adjust the distance between the line and the text */
+}
+
+.scope{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+ .content {
+  position: relative; /* Ensure content respects the container's position */
+  z-index: 10; /* Ensure content is above the images */
+  justify-content: center;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: -5%;
+}
+
+#mobiles{
+  margin-top: 50px;
+  align-items: left;
+}
+
+.flexbox-container{
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 70%;
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(3, 100px);
+  grid-template-columns: 1fr 1fr 0.5fr;
+  font-size: large;
+  gap: 20px;
+  border-radius: 2em;
+ }    
+
+.flexbox{
+  border-radius: 1.5em;
+  color: white;
+  background-color: rgb(115, 125, 143);
+}
+
+.item-1{
+  display: flex;
+  flex-direction: column;
+  font-family: "kronaOne";
+  position: relative;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  }
+
+.words{
+  display: flex;
+  flex-direction: column;
+  margin-top: -60px;
+  font-size: 1.5rem;
+  }
+
+.rights{
+  margin-bottom: 50px;
+  font-size: 0.6em;
+  font-family: "Poppins";
+}    
+
+.content-1{
+  margin-top: 200px;
+  padding-left: 30px;
+}
+
+.content-1 .small{
+  font-family: "Poppins-Thin";
+}
+
+.company{
+  font-family: "kronaOne";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+#logo{
+  max-height: 3em;
+}
+   
+#circle{
+  top: 0px;
+  position: absolute;
+}
+
+#arrow{
+  top: 59px;
+  left: 165px;
+  position: absolute;
+}
+
+#arrowline{
+  top: 50px;
+  position: absolute;
+}
+
+.support{
+  font-family: "kronaOne";
+  padding-left: 10px;
+}
+
+.rightsNname{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-2{
+  justify-content: space-between;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+}
+
+.contents{
+   margin-left: 10px;
+}
+
+.content-2{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+   font-family: "Poppins";
+   font-size: 0.8rem;
+}
+
+.link1{
+   margin-top: 30px;
+}
+
+.item-3{
+   display: flex;
+   font-size: 0.8em;
+   justify-content: center;
+   align-items: center;
+}
+
+.link2{
+   
+   font-family: "Poppins"; 
+}  
+
+.item-4{
+   font-family: "kronaOne";
+   display: flex;
+   flex-direction: column;
+   grid-row-start: 1;
+   grid-row-end: 4;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1px;
+}
+
+#app{
+   width: 30px;
+   height: 30px;
+   font-size: 24px; /* Set the size of the icon */
+   color: white; /* Set the initial color of the icon */
+   transition: color 0.3s;
+   
+}
+
+.social{
+  padding-top: 15px;
+}
+
+.app1{
+   margin-top: 15px;
+  }
+
+.app2{
+   margin-bottom: 10px;
+}
+
+.app3{
+   margin-bottom: 10px;
+}
+
+.app4{
+   margin-bottom: 60px;
+}
+
+#app:hover {
+   color: black;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-500px);
+  transition: opacity 0.8s, transform 0.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+   
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#circle1{
+ position: absolute;
+ top: 0;
+ left: 220px;
+}
+
+#circle2{
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+
+#circle3{
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+
+
+
+.popup{
+ position: fixed;
+ top: -150%;
+ left: 50%;
+ transform: translate(-50%, -50%) scale(1.2);
+ opacity: 0;
+ background: linear-gradient(to bottom right, #7b7b7b, #aeaeae);
+ border: 1px solid rgba(255, 255, 255, 0.15);
+ width: 650px;
+ padding: 20px 30px;
+ border-radius: 10px;
+ z-index: 1000;
+ transition: top 0ms ease-in-out 0ms,
+             opacity 300ms ease-in-out 0ms,
+             transform 300ms ease-in-out 0ms,
+}      
+
+.popup.active{
+ top: 50%;
+ transform: translate(-50%, -50%) scale(1);
+ opacity: 1;
+ transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out 0ms, transform 300ms ease-in-out 0ms,
+}
+
+.popup .close-btn{
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ width: 25px;
+ height: 25px;
+ font-size: 18px;
+ text-align: center;
+ line-height: 25px;
+ color: #fdfdfd;
+ background-color: rgba(255, 255, 255, 0.15);
+ border-radius: 50%;
+ cursor: pointer;
+}
+
+.container{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+transform: translate(-50%, -50%)
+}
+
+#open-popup{
+ background: transparent;
+ font-family: "Poppins-SemiBold";
+ font-size: 25px;
+ color: #962929;
+ padding: 10px 20px;
+ cursor: pointer;
+ font-size: 0.5em;
+}
+
+
+
+
+.tabs-container {    
+   display: flex;
+   flex-direction: column;
+   align-items: center;    
+   height: 60vh;
+   
+ }
+ 
+.tabs {
+   display: flex;
+   
+ }
+ 
+.tab-header {
+ width:60%;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 10px;
+ text-align: center;
+ font-family: "Poppins";
+   font-size: 1.5rem;
+ position: relative; /* Add this line */
+ background-color: transparent;
+ 
+}
+
+.researchTabs{
+   display: flex;
+   flex-direction: row;
+}
+ 
+.tab-header.active::after { /* Add this block */
+ content: "";
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 3px; /* Height of the highlighter */
+ background-color: blue; /* Color of the highlighter */
+}
+
+ .tab-content-container {
+   text-align: center;
+ }
+ 
+ .tab-content {
+   display: none;
+   padding: 10px;
+   background-color: #7b7b7b;
+ }
+ 
+ .tab-content.active {
+   display: block;
+ }
+ 
+ .tab-inner-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .research.active::after {
+ background-color: rgb(39, 186, 235);
+}
+
+.design.active::after {
+ background-color: red;
+}
+
+.develop.active::after {
+ background-color: green;
+}
+
+.tab-header.research.active::after,
+.tab-header.design.active::after,
+.tab-header.develop.active::after {
+ content: "";
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 3px; /* Height of the highlighter */
+}
+
+.tab-header.active + .tab-content.active::after {
+ display: block; /* Display the highlighter when both tab header and content are active */
+}
+
+.researchObj{
+ display: flex;
+ flex-direction: column;
+}
+
+.researchDiv{
+   display: flex;
+ flex-direction: row;
+}
+
+
+       #dropContentOne {
+           display: none;
+           width: 50%;
+           
+       }
+
+       #dropContentTwo {
+           width: 50%;
+           display: none;
+       }
+
+       #dropContentThree {
+           width: 50%;
+           display: none;
+       }
+
+       #dropContentFour {
+           width: 50%;
+           display: none;
+       }
+
+       #dropContentFive {
+           width: 50%;
+           display: none;
+       }
+
+       #dropContentSix {
+           width: 50%;
+           display: none;
+       }
+
+       #research{
+           display: flex;
+           flex-direction: column;
+           gap: 5px;
+       }
+       #design{
+           display:none;
+       }
+       #develop{
+           display:none;
+       }
+       .dropdownbutton {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+       }
+
+       #hiddenOption {
+           display: none;
+       }
+
+       #hiddenOptionLeft {
+           display: none;
+       }
+
+       #sideDivOne {
+           display: flex;
+           flex-direction: 'column';
+       }
+
+       #sideDivTwo {
+           display: flex;
+           flex-direction: 'column';
+       }
+
+       #servicesimg1{            
+           margin-left: 8%;
+           margin-bottom: 10%;
+       }
+
+       #servicesimg2{            
+           margin-left: 12%;
+           margin-bottom: 10%;
+       }
+
+       .explanation{
+       width: 65%
+       }
+
+       .tick{
+        display: flex;
+        flex-direction: row;
+       }
